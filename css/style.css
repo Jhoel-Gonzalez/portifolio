@@ -1,29 +1,56 @@
 html {
     font-family: sans-serif;
+    font-size: 15px;
 }
 
-header {
+.cabecalho {
     background-color: #430f73;
-    padding: 10px;
-    text-align: right;
+    padding: 2px;
+}
+
+nav {
+    padding-top: 11px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-bar {
     display: inline-block;
     background-color: #0000ff;
     color: #fff;
-    padding: 10Px 30px;
-    text-decoration: none;
+    padding: 10Px 10px;
+    margin: 0px 5px;
     font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 4px 4px 2px black;
 }
 
 .nav-bar:hover {
     background-color: #b2b2f7;
+    transform: scale(1.1);
 }
 
-.section_01 {
+.section__primaria {
     background-color: #03A9F4;
     padding: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section__secundaria {
+    background-color: #fff;
+    padding: 30px;
+    font-weight: 600;
 }
 
 .img {
@@ -31,6 +58,7 @@ header {
     height: 200px;
     display: block;
     margin: auto;
+    margin-bottom: 20px;
     border: 4px solid #430f73;
     border-radius: 50%
 }
@@ -38,6 +66,8 @@ header {
 .nome {
     text-align: center;
     color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .description {
@@ -46,105 +76,69 @@ header {
     font-weight: 600;
 }
 
-.titulo_01 {
+.titulo {
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.primario {
     color: #03A9F4;
 }
 
-.section_02 {
-    background-color: #fff;
-    padding: 30px
+.secundario {
+    color: #fff;
 }
 
 .texto {
     text-align: center;
     color: #000;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
-
-.titulo_02 {
-    text-align: center;
-    color: #fff;
-}
-
-.iframe_01 {
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-bottom: 10px;
-}
-
-.iframe_02 {
-    padding-top: 30px;
-    padding-right: 90px;
-    padding-left: 125px;
-    padding-bottom: 10px;
-}
-
-.div_01 {
-    display: inline-block;
-}
-
-.div_01 p {
-    padding-left: 100px;
+.video {
+    width: 300px;
     color: #000;
     font-weight: 600;
+    font-size: 15px;
+    text-align: left;
 }
 
-.div_02 {
-    display: inline-block;
-}
-
-.div_02 p {
-    padding-left: 125px;
-    color: #000;
-    font-weight: 600;
-}
-
-.titulo_03 {
-    text-align: center;
-    color: #03A9F4;
-    padding-bottom: 30px;
-}
-
-.div_03 {
-    display: inline-block;
-}
-
-.div_04 {
-    display: inline-block;
-}
-
-.lista_01 {
-    font-weight: 600;
-    list-style-type: none;
-    padding-left: 60px;
-    padding-bottom: 20px;
-}
-
-.lista_02 {
-    font-weight: 600;
-    padding-left: 85px;
-    padding-bottom: 20px;
-    list-style-type: none;
-}
-
-.titulo_04 {
-    text-align: center;
-    color: #fff;
-}
-
-.contenedor {
+.video_ajuste {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.video .iframe {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.experiencias {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experiencias .lista {
+    font-weight: 600;
+    list-style-type: none;
+}
+
+.experiencias .lista .item {
+    margin-bottom: 10px;
 }
 
 .contato {
-    width: 100%;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-weight: 600;
 }
 
 .form {
+    width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -154,13 +148,20 @@ header {
     margin-bottom: 15px;
     border: 1px solid #fff;
     border-radius: 5px;
+    color: #000000;
+    font-weight: 600;
 }
-.input_01 {
+
+.botao_enviar {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
     border: 1px solid #fff;
     border-radius: 5px;
+}
+
+.botao_enviar:hover {
+    background-color: #b2b2f7;
 }
 
 textarea {
@@ -170,35 +171,12 @@ textarea {
 .footer {
     background-color: #430f73;
     padding: 10px;
-   /*  display: flex;
-    justify-content: center; */
+    text-align: center;
+    color: #fff;
 }
 
-.footer span {
-    color: #fff;
-    padding-left: 55px;
-}
-
-.footer h4 {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding-left: 5px;
-}
 .footer p {
     display: inline-block;
-    padding-left: 20px;
     color: #fff;
-}
-
-@media (max-width: 600px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        background-color: #8a2be2;
-        text-align: center;
-    }
-    .nav-bar {
-        margin: 10px 0;
-    }
+    padding-left: 20px;
 }
